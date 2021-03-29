@@ -1,9 +1,7 @@
-from django.db.models import fields
 from rest_framework import serializers
-from .models import User, Favorites
 from posts.serializers import PostImageSerializer
 from posts.models import Post
-
+from .models import User
 
 
 class PostForUserSerializer(serializers.ModelSerializer):
